@@ -119,6 +119,9 @@ namespace App.Readers
                 case "guest":
                     readerType = ReaderType.Guest;
                     return true;
+                case "alumna":
+                    readerType = ReaderType.Alumna;
+                    return true;
                 default:
                     readerType = ReaderType.Student;
                     return false;

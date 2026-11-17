@@ -8,6 +8,7 @@ namespace App.Enums
     {
         Student,
         Teacher,
-        Guest
+        Guest,
+        Alumna
     }
 }

@@ -1,0 +1,264 @@
+{
+ "kind": "placement-results",
+ "version": 1,
+ "mode": "C",
+ "lang": "csharp",
+ "created": "2026-11-17T17:14:17",
+ "created_epoch": 1794928457079,
+ "at": null,
+ "build": {
+  "ok": true,
+  "output": "Build succeeded.\n    1 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:02.13",
+  "ms": 2409
+ },
+ "runs": [
+  {
+   "file": "check1a.txt",
+   "exit": 0,
+   "timed_out": false,
+   "ms": 80,
+   "stdout": "FINES\r\n101,צביה לוין,6\r\n102,תהילה כץ,0\r\n107,יעל אדלר,8\r\n103,שירה גבאי,0\r\n104,דינה שטרן,2\r\n112,בינה קליין,8\r\n105,הדסה וולף,30\r\n113,זהבה אורן,60\r\n106,חנה רוזן,6\r\n121,גאולה חדד,18\r\n108,טובה מזרחי,100\r\n109,רבקה פישר,0\r\n110,פנינה עזרא,0\r\n111,נחמה ברגר,0\r\n114,מיכל דהן,4\r\n115,אורית שמש,4\r\nFLAGGED\r\n110,פנינה עזרא\r\nERRORS\r\nTOTAL,246\r\nTOP_BOOKS\r\nאיסתרק,8\r\nקיצור שולחן ערוך,6\r\nעולם חירש,4\r\nAT_RISK\r\n121,גאולה חדד\r\n",
+   "stderr_tail": "skeleton ok: read check1a.txt - report day 150 - 20 rows",
+   "decode_problem": false
+  },
+  {
+   "file": "check1b.txt",
+   "exit": 0,
+   "timed_out": false,
+   "ms": 64,
+   "stdout": "FINES\r\n131,לאה גולן,3\r\n132,עדי פרלמן,5\r\n136,שפרה ליפשיץ,0\r\n137,אסתר כרמי,0\r\nFLAGGED\r\nERRORS\r\n133,מלכה נחום,student,איסתרק,80,70\r\n134,נעמי סגל,student,עולם חירש,40\r\n135,ענבל פרץ,staff,להשאר יהודי,30,40\r\nTOTAL,8\r\nTOP_BOOKS\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nעולם חירש,1\r\nAT_RISK\r\n",
+   "stderr_tail": "skeleton ok: read check1b.txt - report day 150 - 7 rows",
+   "decode_problem": false
+  }
+ ],
+ "sample_run": {
+  "file": "sample.txt",
+  "exit": 0,
+  "timed_out": false,
+  "ms": 57,
+  "stdout": "FINES\r\n11,רחל כהן,2\r\n12,מרים לוי,30\r\n21,שרה גולד,0\r\n31,לאה רוזן,8\r\nFLAGGED\r\n21,שרה גולד\r\nERRORS\r\n13,דינה אבן,student,קיצור שולחן ערוך,50,45\r\nTOTAL,40\r\nTOP_BOOKS\r\nעולם חירש,2\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nAT_RISK\r\n",
+  "stderr_tail": "skeleton ok: read sample.txt - report day 120 - 6 rows",
+  "decode_problem": false
+ },
+ "warnings": [],
+ "files": [
+  {
+   "path": "app/Enums/ReaderType.cs",
+   "lines": 13,
+   "classes": [
+    "ReaderType"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/AtRiskResult.cs",
+   "lines": 8,
+   "classes": [
+    "AtRiskResult"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/FineResult.cs",
+   "lines": 9,
+   "classes": [
+    "FineResult"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/FlaggedResult.cs",
+   "lines": 8,
+   "classes": [
+    "FlaggedResult"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/InputResult.cs",
+   "lines": 10,
+   "classes": [
+    "InputResult"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/Loan.cs",
+   "lines": 9,
+   "classes": [
+    "Loan"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/Reader.cs",
+   "lines": 13,
+   "classes": [
+    "Reader"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/ReportResult.cs",
+   "lines": 14,
+   "classes": [
+    "ReportResult"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Models/TopBookResult.cs",
+   "lines": 8,
+   "classes": [
+    "TopBookResult"
+   ],
+   "functions": [],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Program.cs",
+   "lines": 69,
+   "classes": [
+    "Program"
+   ],
+   "functions": [
+    {
+     "name": "Main",
+     "lines": 20
+    },
+    {
+     "name": "ReadReportDay",
+     "lines": 4
+    },
+    {
+     "name": "ReadRows",
+     "lines": 10
+    },
+    {
+     "name": "FindSample",
+     "lines": 11
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Readers/LoanReader.cs",
+   "lines": 146,
+   "classes": [
+    "LoanReader"
+   ],
+   "functions": [
+    {
+     "name": "Read",
+     "lines": 32
+    },
+    {
+     "name": "TryCreateLoan",
+     "lines": 65
+    },
+    {
+     "name": "TryReadReaderType",
+     "lines": 18
+    },
+    {
+     "name": "FindReader",
+     "lines": 12
+    },
+    {
+     "name": "IsValidDay",
+     "lines": 4
+    }
+   ],
+   "type_ifs": 3
+  },
+  {
+   "path": "app/Services/FineCalculator.cs",
+   "lines": 63,
+   "classes": [
+    "FineCalculator"
+   ],
+   "functions": [
+    {
+     "name": "Calculate",
+     "lines": 16
+    },
+    {
+     "name": "ShouldFlag",
+     "lines": 6
+    },
+    {
+     "name": "CalculateStudentFine",
+     "lines": 11
+    },
+    {
+     "name": "CalculateGuestFine",
+     "lines": 6
+    },
+    {
+     "name": "CalculateNumberOfDays",
+     "lines": 4
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Services/FineReportService.cs",
+   "lines": 127,
+   "classes": [
+    "FineReportService"
+   ],
+   "functions": [
+    {
+     "name": "FineReportService",
+     "lines": 4
+    },
+    {
+     "name": "CreateReport",
+     "lines": 66
+    },
+    {
+     "name": "AddBook",
+     "lines": 10
+    },
+    {
+     "name": "AddFlaggedReaderIfNeeded",
+     "lines": 18
+    },
+    {
+     "name": "ContainsReader",
+     "lines": 12
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/Writers/FinesReportWriter.cs",
+   "lines": 49,
+   "classes": [
+    "FinesReportWriter"
+   ],
+   "functions": [
+    {
+     "name": "Write",
+     "lines": 39
+    }
+   ],
+   "type_ifs": 0
+  }
+ ],
+ "git": {
+  "available": true,
+  "commit": "b7833a3",
+  "note": "nothing new to commit",
+  "log": "e1291b4|2026-11-17 13:44:42 +0200|start\ndcc2cec|2026-11-17 16:07:14 +0200|v1\nb7833a3|2026-11-17 17:02:48 +0200|All levels",
+  "numstat": "commit|e1291b4|start\n\n7\t0\t.gitignore\n55\t0\tapp/Program.cs\n11\t0\tapp/app.csproj\n449\t0\tcheck/run_checks.py\n8\t0\tdata/sample.txt\ncommit|dcc2cec|v1\n\n13\t0\tapp/Enums/Type.cs\n13\t0\tapp/Models/Loan.cs\n15\t0\tapp/Models/Reader.cs\n13\t0\tapp/Program.cs\n30\t0\tapp/ReaderGenerator.cs\n3\t0\tapp/app.slnx\ncommit|b7833a3|All levels\n\n3\t0\t.github/copilot-instructions.md\n1\t1\tapp/Enums/{Type.cs => ReaderType.cs}\n8\t0\tapp/Models/AtRiskResult.cs\n9\t0\tapp/Models/FineResult.cs\n8\t0\tapp/Models/FlaggedResult.cs\n10\t0\tapp/Models/InputResult.cs\n3\t7\tapp/Models/Loan.cs\n4\t6\tapp/Models/Reader.cs\n14\t0\tapp/Models/ReportResult.cs\n8\t0\tapp/Models/TopBookResult.cs\n15\t14\tapp/Program.cs\n0\t30\tapp/ReaderGenerator.cs\n146\t0\tapp/Readers/LoanReader.cs\n63\t0\tapp/Services/FineCalculator.cs\n127\t0\tapp/Services/FineReportService.cs\n49\t0\tapp/Writers/FinesReportWriter.cs"
+ }
+}

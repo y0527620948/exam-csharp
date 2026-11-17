@@ -8,9 +8,12 @@ namespace App.Services
     {
         private const int StudentFreeDays = 14;
         private const int StudentGraceDays = 1;
-        private const int StudentMaximumFine = 30;
+        private const int StudentMaximumFine = 40;
         private const int GuestFreeDays = 7;
         private const decimal GuestFinePerDay = 2.5m;
+        private const int AlumnaFreeDays = 10;
+        private const decimal AlumnaFinePerDay = 1.5m;
+        private const int AlumnaMaximumFine = 25;
 
         public int Calculate(ReaderType readerType, Loan loan, int reportDay)
         {
@@ -24,6 +27,8 @@ namespace App.Services
                     return 0;
                 case ReaderType.Guest:
                     return CalculateGuestFine(numberOfDays);
+                case ReaderType.Alumna:
+                    return CalculateAlumnaFine(numberOfDays);
                 default:
                     return 0;
             }
@@ -53,6 +58,13 @@ namespace App.Services
             int lateDays = Math.Max(0, numberOfDays - GuestFreeDays);
             decimal fine = lateDays * GuestFinePerDay;
             return (int)Math.Ceiling(fine);
+        }
+
+        private int CalculateAlumnaFine(int numberOfDays)
+        {
+            int lateDays = Math.Max(0, numberOfDays - AlumnaFreeDays);
+            decimal fine = lateDays * AlumnaFinePerDay;
+            return Math.Min((int)Math.Ceiling(fine), AlumnaMaximumFine);
         }
 
         private int CalculateNumberOfDays(Loan loan, int reportDay)
