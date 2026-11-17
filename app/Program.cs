@@ -19,7 +19,20 @@ class Program
         Console.Error.WriteLine("skeleton ok: read " + Path.GetFileName(path) + " - report day " + reportDay + " - " + rows.Count + " rows");
 
         // Write your code here. 'reportDay' and 'rows' are ready.
+
+
     }
+     
+    //mycode
+
+
+
+
+
+   //
+
+
+
 
     static int ReadReportDay(string[] lines)
     {
