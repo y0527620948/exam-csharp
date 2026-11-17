@@ -4,7 +4,7 @@ using System.Text;
 
 namespace App.Enums
 {
-    public enum Type
+    public enum ReaderType
     {
         Student,
         Teacher,
